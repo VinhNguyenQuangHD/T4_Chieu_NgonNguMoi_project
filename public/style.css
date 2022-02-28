@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #6a5acd;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.form_chinh{
+    width: 600px;
+    max-width: 90%;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.form_chinh > h1{
+    font-size: 30px;
+    color: rgb(26, 25, 25);
+    margin: 0 0 30px 0;
+}
+.form_chinh > form > input{
+    width: 95%;
+    padding: 10px;
+    background-color: #ccc;
+    color: gray;
+    border: 0;
+    margin: 10px 5px;
+    border-radius: 8px;
+}
+.form_chinh > form > button{
+    background-color: #6a5acd;
+    padding: 15px;
+    width: 9%;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.form_chinh > form > input:focus,
+.form_chinh > form > button{
+    outline: none;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/public/style.css">
+        <title>Đăng nhập</title>
+    </head>
+    <body>
+        <div class="form_chinh">
+            <h1>ĐĂNG NHẬP VÀO TÀI KHOẢN CỦA BẠN</h1>
+            <% if (messages) {%>
+                <p><% messages.error%></p>
+            <% } %>
+            <form action="/dangnhaptk" method="POST">
+                <input type="text" name="email_form" placeholder="example@gmail.com">
+                <input type="text" name="password_form" placeholder="Nhập vào mật khẩu">
+                <button>ĐĂNG NHẬP</button>
+            </form>
+        </div>
+    </body>
+</html>
